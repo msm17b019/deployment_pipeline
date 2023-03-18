@@ -4,4 +4,4 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Testing"
+      - run: echo "Testing"

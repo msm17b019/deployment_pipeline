@@ -1,7 +1,7 @@
 name: Deployment Pipeline
 on: [push]
 jobs:
-  Create and push image to ECR:
+  create_and_push_image_to_ecr:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

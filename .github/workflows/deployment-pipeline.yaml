@@ -5,16 +5,11 @@ on:
     branches: [ main ]
 
 jobs:
-<<<<<<< HEAD
   build:
     name: Build Image
-=======
-  checkout:
->>>>>>> parent of 540981b (Added Dockerfile)
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
     - name: Checkout code
       uses: actions/checkout@v3
 
@@ -37,6 +32,3 @@ jobs:
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-=======
-      - run: echo "Testing"
->>>>>>> parent of 540981b (Added Dockerfile)
